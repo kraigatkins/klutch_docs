@@ -183,6 +183,7 @@
       <li>Post engagement metrics (where relevant for reporting)</li>
     </ul>
     <p>We do <strong>not</strong> collect reviewer contact information beyond what is publicly displayed on the source platform.</p>
+    <p>When Meta transmits a data deletion request to us (see Section 7.2), the request contains an app-scoped user ID (ASID) — a per-app unique identifier that we use only to correlate the deletion request against our records.</p>
 
     <h3>3.3 From Website Visitors (SmartPixl / Klutch Radar)</h3>
     <p>When a Client deploys our visitor tracking pixel on their website, we may receive — through our vendor partners — identity-resolution data about visitors who have separately opted into data sharing with the underlying identity provider. This may include:</p>
@@ -273,6 +274,7 @@
       <li>The platforms you'd like data removed from (Klutch dashboards, Google connections, Facebook connections, or all)</li>
     </ul>
     <p>We will confirm receipt within 5 business days and complete deletion within 30 days, except where retention is required by law (e.g., billing records, audit logs subject to ongoing compliance requirements).</p>
+    <p><strong>Automated data deletion via Meta.</strong> Facebook / Meta users may also trigger data deletion by removing our app ("Klutch Reputation") from their Meta account. Meta sends the request to our automated callback endpoint at <code>https://klutch-reports-441900104103.us-south1.run.app/api/meta-data-deletion-callback</code>. The endpoint acknowledges the request, logs it for audit, and returns a status URL and confirmation code. As of the date of this policy, Klutch does not store personally identifiable Meta user data (user IDs, contact information) beyond the public review content shared on a Client's Facebook Page. Requests are therefore acknowledged and closed with a "no personal data on file" result unless we identify records tied to the requesting user.</p>
 
     <h3>7.3 End-User Rights</h3>
     <p>If you are an end user (e.g., a customer whose Google review or Facebook recommendation we have processed on behalf of a Client) and you wish to inquire about or request deletion of your data, contact us at <a href="mailto:kraig@klutchdigitalmarketing.com">kraig@klutchdigitalmarketing.com</a>. We may need to coordinate with the relevant Client to fulfill your request.</p>
